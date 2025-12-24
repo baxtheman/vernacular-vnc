@@ -11,27 +11,19 @@ released under the MIT license.
 The latest releases are available for manual download from our [releases page](https://github.com/shinyhut/vernacular-vnc/releases).
 Vernacular is also available through Maven:
 
-### Maven
+## This fork 
 
-```xml
-<dependencies>
-    <dependency>
-        <groupId>com.shinyhut</groupId>
-        <artifactId>vernacular</artifactId>
-        <version>1.13</version>
-    </dependency>
-</dependencies>
+This fork adds support for VNC protocol version 3.6, which is still used by some legacy VNC servers. The implementation
+includes the following features:
+
+- Basic VNC authentication protocol for version 3.6
+- Support for raw encoding in version 3.6
+- Compatibility with standard VNC server implementations using protocol 3.6
+
+## Version
+
 ```
-
-### Gradle
-```groovy
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    compile 'com.shinyhut:vernacular:1.13'
-}
+<version>1.14.2</version>
 ```
 
 ## Usage
